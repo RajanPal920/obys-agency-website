@@ -19,8 +19,22 @@ tl.from("#line1-part1, .line h2", {
     }, 35);
   },
 });
+tl.to(".line h2",{
+  animationName:"anime",
+  opacity:1
+})
 tl.to("#loader", {
   opacity: 0,
-  duration: 0.4,
+  duration: 0.2,
   delay: 3.8,
 });
+tl.from("#page1",{
+  delay:0.2,
+  y:1600,
+  opacity:0,
+  duration:0.3,
+  ease:Power4
+})
+tl.to("#loader",{
+  display :"none"
+})
